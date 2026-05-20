@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حل امتحان فاينل 2025 - ترميم المنشآت</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #2563eb;
+            --accent: #e11d48;
+            --bg: #f8fafc;
+            --text: #0f172a;
+            --light-bg: #eff6ff;
+            --border: #bfdbfe;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .page-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 50px 60px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-top: 8px solid var(--primary);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .header h1 {
+            color: var(--primary);
+            font-weight: 900;
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+        }
+
+        .header p {
+            color: #64748b;
+            font-size: 1.2rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .section-title {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 1.5rem;
+            margin: 40px 0 20px 0;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .question-block {
+            margin-bottom: 35px;
+        }
+
+        .q-title {
+            color: var(--secondary);
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-right: 15px;
+            border-right: 4px solid var(--secondary);
+        }
+
+        .answer-content {
+            padding-right: 20px;
+            font-size: 1.1rem;
+        }
+
+        .sub-heading {
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 1.15rem;
+            margin: 15px 0 5px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 15px 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-right: 20px;
+            margin-bottom: 8px;
+        }
+
+        ul li::before {
+            content: '•';
+            color: var(--secondary);
+            position: absolute;
+            right: 0;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .math-block {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            font-family: 'Amiri', serif;
+            font-size: 1.2rem;
+            direction: ltr;
+            overflow-x: auto;
+        }
+
+        .math-rtl {
+            direction: rtl;
+            text-align: right;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .highlight-result {
+            background-color: #dcfce7;
+            color: #166534;
+            padding: 5px 15px;
+            border-radius: 4px;
+            font-weight: 700;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .two-columns {
+            display: block;
+            width: 100%;
+        }
+
+        .two-columns .question-block {
+            display: inline-block;
+            width: 47%;
+            vertical-align: top;
+            page-break-inside: avoid;
+            break-inside: avoid;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+        }
+
+        .two-columns .question-block:nth-child(odd) {
+            margin-left: 5%;
+        }
+
+        .two-columns .section-title {
+            margin: 20px 0 20px 0;
+        }
+
+        .math-block {
+            font-size: 1.1rem !important;
+            padding: 15px !important;
+            overflow-x: auto;
+            word-wrap: break-word;
+        }
+
+        @media print {
+            .page-container {
+                max-width: none !important;
+            }
+        }
+
+        /* إعدادات الطباعة (A4 PDF) */
+        @media print {
+            @page {
+                size: A4;
+                margin: 20mm;
+            }
+            body {
+                background: white;
+                padding: 0;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            .page-container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                border: none;
+                width: 100%;
+            }
+            .section-title {
+                break-after: avoid;
+                page-break-after: avoid;
+            }
+            .question-block {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-container">
+
+    <div class="header">
+        <h1>📄 حل امتحان فاينل 2025</h1>
+        <p>مادة ترميم المنشآت </p>
+    </div>
+
+    <div class="section-title">السؤال الأول (15 درجة)</div>
+    <div class="two-columns">
+
+        <div class="question-block">
+            <div class="q-title">1- مجالات القصور في التصميم والقصور في التفاصيل موضحاً الأخطاء وكيفية التعرف عليها؟</div>
+            <div class="answer-content">
+                <div class="sub-heading">القصور في التصميم:</div>
+                <ul>
+                    <li><strong>الحسابات:</strong> أخطاء في التحليل الإنشائي - عدم كتابة القطاعات. <br> <span style="color:#64748b">(يتم التعرف عليها بـ: مراجعة النوتة الحسابية ومراجعة اللوحات).</span></li>
+                    <li><strong>الأحمال:</strong> عدم أخذ كل حالات التحميل في الاعتبار مثل الرياح والزلازل. <br> <span style="color:#64748b">(مراجعة حالات التحميل).</span></li>
+                    <li><strong>الظروف المحيطة:</strong> عدم أخذ كل الظروف المحيطة في الاعتبار. <br> <span style="color:#64748b">(مراجعة حالات الحدود).</span></li>
+                    <li><strong>الافتراضات:</strong> أخطاء في افتراض الأحمال أو حركة الأوزان. <br> <span style="color:#64748b">(مراجعة الأوزان والأحمال).</span></li>
+                    <li><strong>المواد/الأعضاء:</strong> أخطاء في تقدير مقاومة المواد. <br> <span style="color:#64748b">(مراجعة ملاحظات اللوحات).</span></li>
+                    <li><strong>الدعامات:</strong> عدم أخذ تأثير الحركة نتيجة الاحتكاك عند الركائز. <br> <span style="color:#64748b">(تفاصيل الدعامات).</span></li>
+                    <li><strong>التمدد والانكماش:</strong> عدم وجود وصلات كافية. <br> <span style="color:#64748b">(مراجعة لوحات الوصلات).</span></li>
+                </ul>
+
+                <div class="sub-heading">القصور في التفاصيل:</div>
+                <ul>
+                    <li><strong>الغطاء الخرساني:</strong> عدم تحديد الغطاء الخرساني المناسب للظروف. <br> <span style="color:#64748b">(لوحات التفاصيل).</span></li>
+                    <li><strong>أطوال التماسك:</strong> عدم تحديد أطوال التماسك المناسبة للأسياخ. <br> <span style="color:#64748b">(لوحات البلاطات والكمرات).</span></li>
+                    <li><strong>الوصلات:</strong> عدم تحديد أماكن وصلات الصب والتمدد. <br> <span style="color:#64748b">(هل الوصلات تسمح بالحركة؟).</span></li>
+                    <li><strong>القطاعات:</strong> تكدس الحديد مما يسبب التعشيش. <br> <span style="color:#64748b">(قطاعات الأعمدة والكمرات).</span></li>
+                    <li><strong>المواصفات:</strong> عدم كفاية المواصفات أو عدم انطباقها. <br> <span style="color:#64748b">(مراجعة المواصفات).</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-title">2- أشهر مواد الإصلاح والترميم للمنشآت المعيبة؟</div>
+            <div class="answer-content">
+                <ul>
+                    <li>(1) كيما بوكسي 131 : مانعة للصدأ.</li>
+                    <li>(2) كيما بوكسي 165 : تزريع أشاير الحديد.</li>
+                    <li>(3) كيما بوكسي 104 : ربط الخرسانة القديمة بالجديدة.</li>
+                    <li>(4) أديبوند 65 : ربط الخرسانة القديمة بالجديدة.</li>
+                    <li>(5) سيكامنت 163M: مواد ملدنات لقابلية التشغيل .</li>
+                    <li>(6) ماستر سيل (501) : هي مادة عازلة للرطوبة (عازل كيميائي).</li>
+                </ul>
+            </div> 
+        </div>
+
+        <div class="question-block">
+            <div class="q-title">3- الأسباب غير الإنشائية لتصدعات المباني؟</div>
+            <div class="answer-content">
+                <ul>
+                    <li>1- أسباب بيئية: (رياح - أمطار - درجة حرارة).</li>
+                    <li>2- أسباب كوارث: (الزلازل والبراكين).</li>
+                    <li>3- أسباب غير طبيعية: (الحروب والحريق).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">السؤال الثاني (15 درجة)</div>
+    <div class="two-columns">
+
+        <div class="question-block">
+            <div class="q-title">1- إشرح باختصار ما تتضمنه قائمة الفحص الابتدائي للمنشآت المعيبة؟</div>
+            <div class="answer-content">
+                <div class="sub-heading">(1) وصف عام للمنشأ:</div>
+                <ul>
+                    <li>الموقع ونوع المنشأ وأبعاده وارتفاعه.</li>
+                    <li>التصميم: (الرسومات التنفيذية - جهد التربة).</li>
+                    <li>الصور: للمبنى والموقع العام.</li>
+                    <li>استكشاف الموقع: عمل اختبارات .</li>
+                </ul>
+
+                <div class="sub-heading">(2) الحالة الراهنة للمنشأ:</div>
+                <ul>
+                    <li>الحركة والتشكل للمنشأ: انبعاج - هبوط الأساسات - الترخيم - حركة البلاطات.</li>
+                    <li>الأجزاء التي بها تلفيات وشروخ: أعمدة - كمرات - أسقف.</li>
+                </ul>
+
+                <div class="sub-heading">(3) حالة سطح مكونات المبنى.</div>
+
+                <div class="sub-heading">(4) المواد المستخدمة:</div>
+                <ul>
+                    <li>1. الأسمنت.</li>
+                    <li>2. الركام بأنواعه.</li>
+                    <li>3. الإضافات.</li>
+                    <li>4. ماء خلط.</li>
+                    <li>5. صلب التسليح.</li>
+                    <li>6. الخلطة الخرسانية.</li>
+                    <li>7. خواص الخرسانة الطازجة.</li>
+                </ul>
+
+                <div class="sub-heading">(5) طريقة التنفيذ:</div>
+                <ul>
+                    <li>1. التعامل مع المواد.</li>
+                    <li>2. الفرم والشدات.</li>
+                    <li>3. الخلطة الخرسانية.</li>
+                    <li>4. الصب والدمك.</li>
+                    <li>5. نهو أسطح الخرسانة.</li>
+                    <li>6. المعالجة.</li>
+                    <li>7. فك الشدات.</li>
+                </ul>
+
+                <div class="sub-heading">(6) حالة الخرسانة الداخلية:</div>
+                <p style="margin-top:0">مقاومة الخرسانة - عيوب الخرسانة.</p>
+
+                <div class="sub-heading">(7) ظروف التحميل والبيئة المحيطة:</div>
+                <ul>
+                    <li>تأثير البيئة المحيطة.</li>
+                    <li>الأحمال.</li>
+                    <li>صرف مياه الأمطار.</li>
+                    <li>التربة.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-title">2- تكلم بإيجاز عن: الشروخ الناتجة عن صدأ وتآكل حديد التسليح (موضحاً معنى تفحم الحديد) - الوقت اللازم لحدوث تدهور الخرسانة؟</div>
+            <div class="answer-content">
+                <div class="sub-heading">وسائل منع شروخ صدأ حديد التسليح:</div>
+                <p style="margin-top:0">تحدث بسبب تواجد رطوبة في الجو أو تسرب المياه.</p>
+                <p style="margin-bottom:5px; font-weight:600;">ولمنعها:</p>
+                <ul>
+                    <li>1. زيادة الغطاء الخرساني.</li>
+                    <li>2. استخدام خرسانة كثيفة.</li>
+                    <li>3. عزل حديد التسليح.</li>
+                    <li>4. استخدام إضافات للخرسانة مانعة للنفاذ.</li>
+                    <li>5. تقليل ماء الخلط وزيادة تشغيلية.</li>
+                    <li>6. استخدام الملدنات (P.S).</li>
+                </ul>
+
+                <div class="sub-heading" style="color:var(--accent);">معنى تفحم الحديد: (أي نسبة صدأ حديد التسليح)</div>
+                <ul>
+                    <li>1. أقل من 20% &rarr; ok</li>
+                    <li>2. 20 إلى 40% &rarr; صدأ حديد.</li>
+                    <li>3. 40 إلى 60% &rarr; حديد متفحم.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-title">3- الشروخ بالمنشآت الناتجة عن هبوط التربة وفروق الهبوط النسبية للأساسات؟</div>
+            <div class="answer-content">
+                <p style="margin-top:0; font-weight:600; color:#475569; margin-bottom:15px;">الشروخ الناتجة عن هبوط التربة</p>
+                <div class="sub-heading">تحدث بسبب:</div>
+                <ul>
+                    <li>1. انكماش أو انتفاخ التربة بسبب تسرب المياه أو الأمطار، مما يؤدي إلى هبوط أو زيادة حجم التربة.</li>
+                    <li>2. أحمال المبنى تؤدي إلى ضغط يسبب هبوط في التربة.</li>
+                    <li>3. اختلاف أبعاد الأساسات المنفردة بسبب اختلاف أحمال الأعمدة بشكل كبير.</li>
+                </ul>
+                <div class="sub-heading" style="color:var(--accent);">كيفية منع هذه الشروخ:</div>
+                <ul>
+                    <li>1. تصميم الأساسات يكون بناءً على تقرير أبحاث التربة لمعرفة تغير خواص التربة مع العمق.</li>
+                    <li>2. عند تصميم الميدات نأخذ القيم المسموح بها لزاوية الهبوط.</li>
+                    <li>3. الاستفادة من حوائط الطوب في زيادة جساءة المبنى وتقليل فروق الهبوط.</li>
+                    <li>4. في الأراضي الرخوة يتم عمل تفاصيل إنشائية للكمرات والأعمدة بحيث تعمل كـ Frames.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">السؤال الرابع (25 درجة)</div>
+    <div class="two-columns">
+
+        <div class="question-block">
+            <div class="q-title">1- ما هي مركبات البوليمرات المسلحة بالألياف (FRP)، وما هي أنواعها?</div>
+            <div class="answer-content">
+                <div class="sub-heading">التعريف:</div>
+                <p style="margin-top:0">هي نوع من أنواع اللدائن ويتم تدعيمها وتقويتها بالألياف، وتنتج فئة من المواد يطلق عليها المواد المركبة.</p>
+                <div class="sub-heading">مكوناتها:</div>
+                <p style="font-weight:600; color:var(--text); margin-bottom:5px;">1) الألياف: (وهي عبارة عن ثلاثة أنواع من الألياف)</p>
+                <ul>
+                    <li>أ) ألياف الكربون.</li>
+                    <li>ب) الألياف الزجاجية.</li>
+                    <li>ج) ألياف البازلت والأراميد.</li>
+                </ul>
+                <p style="font-weight:600; color:var(--text); margin-bottom:5px;">2) المواد الرابطة:</p>
+                <ul>
+                    <li>أ) الفينيل إستر.</li>
+                    <li>ب) الإيبوكسي.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-title">2- ما المقصود بالمواد الرابطة المستخدمة في (FRP)؟</div>
+            <div class="answer-content">
+                <p style="margin-top:0">هي مواد تعمل على التصاق البوليمر على سطح الخرسانة بإحكام، وتنقل القوة بين الألياف، وتحمي الألياف من التأثيرات الدورية.</p>
+                <div class="sub-heading">وتتكون من:</div>
+                <ul>
+                    <li>1. الفينيل إستر.</li>
+                    <li>2. الإيبوكسي.</li>
+                </ul>
+                <div class="sub-heading">الإيبوكسي:</div>
+                <p style="margin-top:0">يفضل استخدامه في المجال ولكنه الأكثر تكلفة، حيث تبلغ صلاحية الإيبوكسي حوالي 30 دقيقة عند 20 درجة مئوية.</p>
+                <ul>
+                    <li>1. لها قوة ترابطة عالية.</li>
+                    <li>2. مقاومة كيميائية عالية.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-title">3- ما هي أشهر تطبيقات البوليمرات المسلحة بالألياف FRP (مع التوضيح بالرسم)؟</div>
+            <div class="answer-content">
+                <ul>
+                    <li>1. تستخدم CFRP في الخرسانة سابقة الإجهاد التي تكون فيها المقاومة عالية.</li>
+                    <li>2. تستخدم CFRP في الأساسات تحت الماء.</li>
+                    <li>3. تستخدم CFRP في الهياكل الهجينة عالية الأداء.</li>
+                    <li>4. تستخدم في السلالم والممرات.</li>
+                    <li>5. تستخدم قضبان FRP كتسليح داخلي للهياكل الخرسانية في الميدان.</li>
+                    <li>6. تستخدم للتأهيل الزلزالي والترميم.</li>
+                    <li>7. تستخدم AFRP لتقوية الهياكل الهندسية المعرضه للتحميل الديناميكي وأحمال الصدم.</li>
+                </ul>
+                <p style="font-size:13px; color:#888;">(ملاحظة: تذكر إضافة الرسم المطلوب أثناء الامتحان)</p>
+            </div>
+        </div>
+
+        <div class="question-block">
+            <div class="q-title">4- اذكر أهم مميزات وعيوب استخدام البوليمرات المسلحة بالألياف FRP في الترميم؟</div>
+            <div class="answer-content">
+                <div class="sub-heading" style="color:var(--secondary);">المميزات:</div>
+                <ul>
+                    <li>1. مقاومة عالية للشد.</li>
+                    <li>2. لا يزيد من أبعاد الخرسانة.</li>
+                    <li>3. مقاومة عالية للأحماض والعوامل الجوية.</li>
+                    <li>4. خفيفة الوزن ولا توجد أحمال إضافية عند التقوية بها.</li>
+                    <li>5. لا تحتاج مساحات عند التشوين والتثبيت.</li>
+                    <li>6. لا تحتاج إلى عمالة كثيرة.</li>
+                    <li>7. سهلة التنفيذ ولا تحتاج إلى قوالب.</li>
+                    <li>8. لا يحتاج إلى إخلاء المنشأ أثناء التدعيم بها.</li>
+                    <li>9. لا تتأثر بالتآكل والصدأ.</li>
+                </ul>
+                <div class="sub-heading" style="color:var(--accent);">العيوب:</div>
+                <ul>
+                    <li>1. التكلفة العالية.</li>
+                    <li>2. مقاومة ضعيفة للحريق.</li>
+                    <li>3. مقاومة ضعيفة للضغط.</li>
+                    <li>4. تحتاج إلى عمالة فنية مدربة.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
